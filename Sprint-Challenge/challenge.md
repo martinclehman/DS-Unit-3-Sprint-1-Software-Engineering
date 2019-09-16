@@ -264,10 +264,15 @@ career here, you'll have to answer the following:
 - What, in your opinion, is an important part of code reviews? That is, what is
   something you pay attention to when you review code, and that you appreciate
   when others do the same for your code?
+  
+  Improve naming conventions, make code logic easier to follow/read, and improve code efficiency. (sorry for short answer, in a hurry to leave)
+  
 - We have an awful lot of computers here, and it gets pretty confusing with
   slightly different things running on all of them. How could containers help us
   improve this situation?
-
+  
+  Containers hold only package dependencies needed to run the program and may be run independent of the user's operating system, so they are a lot lighter. Containers keep usage acitivities away the host's operating system unlike virtual machines. 
+  
 Answer both of these questions (baseline ~5 sentences) here in text.
 
 ### Part 8 - Turn it in!
