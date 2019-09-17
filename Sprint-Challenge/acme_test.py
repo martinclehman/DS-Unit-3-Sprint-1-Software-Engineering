@@ -18,10 +18,11 @@ class AcmeProductTests(unittest.TestCase):
         self.assertEqual(prod.weight, 20)
 
     def test_stealability_and_explosiveness(self):
-        prod = Product('Nuclear Weapon', price = 1,
-                       weight = 1000, flammability=1000000)
+        prod = Product('Nuclear Weapon', price=1,
+                       weight=1000, flammability=1000000)
         self.assertEqual(prod.stealability(), 'Not so stealable...')
         self.assertEqual(prod.explode(), '...BABOOM!!')
+
 
 class AcmeReportTests(unittest.TestCase):
     """Making sure Acme reports are accurate."""

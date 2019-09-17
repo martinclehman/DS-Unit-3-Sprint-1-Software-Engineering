@@ -15,9 +15,9 @@ def generate_products(num_products=30):
 
     for i in range(num_products):
         name = choice(ADJECTIVES) + ' ' + choice(NOUNS)
-        price = randint(5,100)
-        weight = randint(5,100)
-        flammability = uniform(0,2.5)
+        price = randint(5, 100)
+        weight = randint(5, 100)
+        flammability = uniform(0, 2.5)
 
         products.append(Product(name, price, weight, flammability))
 
@@ -25,7 +25,7 @@ def generate_products(num_products=30):
 
 
 def inventory_report(products):
-    
+
     def mean(list):
         return sum(list)/len(list)
     n_unique = len(set([p.name for p in products]))
@@ -38,7 +38,7 @@ def inventory_report(products):
     print("Average price: ", mean_price)
     print("Average weight: ", mean_weight)
     print("Average flammability: ", mean_flammability)
-    
+
     return
 
 if __name__ == '__main__':
